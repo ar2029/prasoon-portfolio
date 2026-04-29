@@ -47,7 +47,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
             </h4>
             <div className="rounded-xl overflow-hidden border border-white/10 bg-white">
               <img
-                src={project.architectureDiagram}
+                src={`${import.meta.env.BASE_URL}${project.architectureDiagram}`}
                 alt={`${project.title} architecture`}
                 className="w-full"
               />

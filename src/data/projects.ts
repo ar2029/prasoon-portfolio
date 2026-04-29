@@ -56,7 +56,7 @@ const projects: Project[] = [
     languages: ['Python', 'SQL', 'PySpark', 'YAML', 'PowerShell'],
     impact:
       'Reduced infrastructure costs through optimized space utilization insights. Enabled data-driven C-suite decisions on real estate and space investment.',
-    architectureDiagram: '/images/envision-architecture.svg',
+    architectureDiagram: 'images/envision-architecture.svg',
     thumbnailImage: undefined,
     tags: ['Streaming', 'Lakehouse', 'Analytics', 'Microsoft Fabric', 'Real-Time'],
     featured: true,
