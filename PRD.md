@@ -1,4 +1,5 @@
-# Prasoon Garg — Personal Portfolio Website
+# Product Requirements Document (PRD)
+## Prasoon Garg — Personal Portfolio Website
 
 **Version:** 1.0  
 **Date:** 2026-04-16  
@@ -532,3 +533,5 @@ VITE_EMAILJS_CONFIRM_TEMPLATE_ID=template_recruiter_confirm
 - [ ] Deployed to Vercel with working URL
 
 ---
+
+*PRD v1.0 — Ready for implementation upon Prasoon's review and answers to open questions.*

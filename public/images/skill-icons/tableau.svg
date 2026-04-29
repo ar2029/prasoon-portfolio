@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <!-- Tableau cross/hashtag logo style -->
+  <!-- Center -->
+  <rect x="9.5" y="9.5" width="5" height="5" rx="0.5" fill="#E97627"/>
+  <!-- Top arm -->
+  <rect x="10" y="1" width="4" height="7" rx="1" fill="#E97627"/>
+  <!-- Bottom arm -->
+  <rect x="10" y="16" width="4" height="7" rx="1" fill="#E97627"/>
+  <!-- Left arm -->
+  <rect x="1" y="10" width="7" height="4" rx="1" fill="#4A6FA5"/>
+  <!-- Right arm -->
+  <rect x="16" y="10" width="7" height="4" rx="1" fill="#4A6FA5"/>
+  <!-- Diagonal dots -->
+  <rect x="3.5" y="3.5" width="3" height="3" rx="0.5" fill="#9B9B9B"/>
+  <rect x="17.5" y="3.5" width="3" height="3" rx="0.5" fill="#9B9B9B"/>
+  <rect x="3.5" y="17.5" width="3" height="3" rx="0.5" fill="#9B9B9B"/>
+  <rect x="17.5" y="17.5" width="3" height="3" rx="0.5" fill="#9B9B9B"/>
+</svg>

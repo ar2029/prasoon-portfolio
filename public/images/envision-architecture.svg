@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 820" font-family="'Segoe UI', Inter, Arial, sans-serif">
+
+<defs>
+  <!-- Arrow markers -->
+  <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+    <polygon points="0 0,8 3,0 6" fill="#94A3B8"/>
+  </marker>
+  <marker id="arr-b" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+    <polygon points="0 0,8 3,0 6" fill="#3B82F6"/>
+  </marker>
+  <marker id="arr-g" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+    <polygon points="0 0,8 3,0 6" fill="#16A34A"/>
+  </marker>
+
+  <!-- Reusable icons (all use currentColor) -->
+
+  <!-- Lakehouse / layered DB -->
+  <symbol id="lh" viewBox="-20 -18 40 36">
+    <ellipse cx="0" cy="-12" rx="17" ry="5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <rect x="-17" y="-12" width="34" height="9" fill="none"/>
+    <ellipse cx="0" cy="-3" rx="17" ry="5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <rect x="-17" y="-3" width="34" height="9" fill="none"/>
+    <ellipse cx="0" cy="6" rx="17" ry="5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <line x1="-17" y1="-12" x2="-17" y2="6" stroke="currentColor" stroke-width="1.5"/>
+    <line x1="17" y1="-12" x2="17" y2="6" stroke="currentColor" stroke-width="1.5"/>
+  </symbol>
+
+  <!-- Spark / lightning bolt -->
+  <symbol id="sp" viewBox="-12 -16 24 32">
+    <path d="M3,-16 L-9,2 L-1,2 L-3,16 L11,-4 L3,-4 Z" fill="currentColor"/>
+  </symbol>
+
+  <!-- Stream / event hubs -->
+  <symbol id="st" viewBox="-18 -14 36 28">
+    <line x1="-14" y1="-8" x2="9" y2="-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    <polygon points="9,-10.5 16,-8 9,-5.5" fill="currentColor"/>
+    <line x1="-14" y1="0" x2="9" y2="0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    <polygon points="9,-2.5 16,0 9,2.5" fill="currentColor"/>
+    <line x1="-14" y1="8" x2="9" y2="8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    <polygon points="9,5.5 16,8 9,10.5" fill="currentColor"/>
+  </symbol>
+
+  <!-- Cylinder / storage -->
+  <symbol id="cy" viewBox="-18 -16 36 32">
+    <ellipse cx="0" cy="-9" rx="16" ry="5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <ellipse cx="0" cy="9" rx="16" ry="5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <line x1="-16" y1="-9" x2="-16" y2="9" stroke="currentColor" stroke-width="1.5"/>
+    <line x1="16" y1="-9" x2="16" y2="9" stroke="currentColor" stroke-width="1.5"/>
+  </symbol>
+
+  <!-- Bar chart / BI -->
+  <symbol id="bi" viewBox="-16 -16 32 32">
+    <rect x="-14" y="0" width="8" height="12" rx="1" fill="currentColor"/>
+    <rect x="-3" y="-7" width="8" height="19" rx="1" fill="currentColor"/>
+    <rect x="8" y="-12" width="8" height="24" rx="1" fill="currentColor"/>
+    <line x1="-15" y1="12" x2="17" y2="12" stroke="currentColor" stroke-width="1.5"/>
+  </symbol>
+
+  <!-- Hexagon agent / AI -->
+  <symbol id="ag" viewBox="-18 -18 36 36">
+    <polygon points="0,-17 15,-8.5 15,8.5 0,17 -15,8.5 -15,-8.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <text y="4" text-anchor="middle" font-size="10" font-weight="700" fill="currentColor">AI</text>
+  </symbol>
+
+  <!-- JSON / document -->
+  <symbol id="js" viewBox="-14 -16 28 32">
+    <rect x="-12" y="-14" width="24" height="28" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <text y="-4" text-anchor="middle" font-size="8" font-weight="700" fill="currentColor">{  }</text>
+    <line x1="-7" y1="4" x2="7" y2="4" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+    <line x1="-7" y1="9" x2="4" y2="9" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+  </symbol>
+
+  <!-- Shield / key vault -->
+  <symbol id="kv" viewBox="-14 -16 28 32">
+    <path d="M 0,-15 L 13,-8 L 13,4 Q 13,14 0,15 Q -13,14 -13,4 L -13,-8 Z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <circle cx="0" cy="-1" r="4" fill="none" stroke="currentColor" stroke-width="1.2"/>
+    <line x1="0" y1="3" x2="0" y2="10" stroke="currentColor" stroke-width="1.5"/>
+  </symbol>
+
+  <!-- Copilot / star spark -->
+  <symbol id="co" viewBox="-16 -16 32 32">
+    <path d="M0,-16 L3,-3 L16,0 L3,3 L0,16 L-3,3 L-16,0 L-3,-3 Z" fill="currentColor"/>
+    <path d="M8,-8 L9,-3 L14,-2 L9,-1 L8,4 L7,-1 L2,-2 L7,-3 Z" fill="currentColor" opacity="0.5"/>
+  </symbol>
+
+  <!-- Dashboard grid -->
+  <symbol id="db" viewBox="-16 -16 32 32">
+    <rect x="-14" y="-14" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.3"/>
+    <rect x="2" y="-14" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.3"/>
+    <rect x="-14" y="2" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.3"/>
+    <rect x="2" y="2" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.3"/>
+  </symbol>
+
+  <!-- People / customers -->
+  <symbol id="pe" viewBox="-18 -16 36 32">
+    <circle cx="-6" cy="-6" r="5" fill="none" stroke="currentColor" stroke-width="1.4"/>
+    <path d="M-15,12 Q-15,2 -6,2 Q3,2 3,12" fill="none" stroke="currentColor" stroke-width="1.4"/>
+    <circle cx="8" cy="-8" r="4.5" fill="none" stroke="currentColor" stroke-width="1.4"/>
+    <path d="M1,12 Q2,4 8,4 Q16,4 17,12" fill="none" stroke="currentColor" stroke-width="1.4"/>
+  </symbol>
+</defs>
+
+<!-- =============================== BACKGROUND =============================== -->
+<rect width="1400" height="820" fill="#F8FAFC"/>
+
+<!-- =============================== CONTAINERS =============================== -->
+
+<!-- Microsoft Fabric -->
+<rect x="262" y="36" width="882" height="494" rx="14"
+      fill="#EFF6FF" fill-opacity="0.65" stroke="#93C5FD" stroke-width="2" stroke-dasharray="10,5"/>
+<rect x="490" y="26" width="260" height="22" rx="5" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1"/>
+<text x="620" y="41" text-anchor="middle" font-size="12" font-weight="700" fill="#1D4ED8" letter-spacing="1">⬡  MICROSOFT FABRIC</text>
+
+<!-- Customer Data Lake Access -->
+<rect x="262" y="545" width="882" height="263" rx="14"
+      fill="#F0FDF4" fill-opacity="0.65" stroke="#86EFAC" stroke-width="2" stroke-dasharray="10,5"/>
+<rect x="310" y="534" width="260" height="22" rx="5" fill="#F0FDF4" stroke="#86EFAC" stroke-width="1"/>
+<text x="440" y="549" text-anchor="middle" font-size="11" font-weight="700" fill="#15803D" letter-spacing="0.8">CUSTOMER DATA LAKE ACCESS</text>
+
+<!-- Analytics & Intelligence -->
+<rect x="1156" y="36" width="234" height="494" rx="14"
+      fill="#F5F3FF" fill-opacity="0.65" stroke="#C4B5FD" stroke-width="2"/>
+<text x="1273" y="60" text-anchor="middle" font-size="11" font-weight="700" fill="#6D28D9" letter-spacing="0.8">ANALYTICS &amp;</text>
+<text x="1273" y="73" text-anchor="middle" font-size="11" font-weight="700" fill="#6D28D9" letter-spacing="0.8">INTELLIGENCE</text>
+
+<!-- =============================== DATA SOURCES =============================== -->
+<text x="65" y="76" text-anchor="middle" font-size="10" font-weight="700" fill="#475569" letter-spacing="0.8">DATA SOURCES</text>
+
+<!-- Space -->
+<rect x="10" y="88" width="112" height="28" rx="6" fill="#F1F5F9" stroke="#94A3B8" stroke-width="1.2"/>
+<rect x="14" y="92" width="18" height="18" rx="3" fill="#CBD5E1"/>
+<line x1="16" y1="98" x2="30" y2="98" stroke="#64748B" stroke-width="1" stroke-linecap="round"/>
+<line x1="16" y1="102" x2="28" y2="102" stroke="#64748B" stroke-width="1" stroke-linecap="round"/>
+<line x1="16" y1="106" x2="30" y2="106" stroke="#64748B" stroke-width="1" stroke-linecap="round"/>
+<text x="70" y="106" text-anchor="middle" font-size="10" font-weight="500" fill="#334155">Space</text>
+
+<!-- Assets -->
+<rect x="10" y="124" width="112" height="28" rx="6" fill="#F1F5F9" stroke="#94A3B8" stroke-width="1.2"/>
+<rect x="14" y="128" width="18" height="18" rx="3" fill="#CBD5E1"/>
+<line x1="16" y1="134" x2="30" y2="134" stroke="#64748B" stroke-width="1" stroke-linecap="round"/>
+<line x1="16" y1="138" x2="28" y2="138" stroke="#64748B" stroke-width="1" stroke-linecap="round"/>
+<line x1="16" y1="142" x2="30" y2="142" stroke="#64748B" stroke-width="1" stroke-linecap="round"/>
+<text x="70" y="143" text-anchor="middle" font-size="10" font-weight="500" fill="#334155">Assets</text>
+
+<!-- Bookings -->
+<rect x="10" y="160" width="112" height="28" rx="6" fill="#F1F5F9" stroke="#94A3B8" stroke-width="1.2"/>
+<rect x="14" y="164" width="18" height="18" rx="3" fill="#CBD5E1"/>
+<line x1="16" y1="170" x2="30" y2="170" stroke="#64748B" stroke-width="1" stroke-linecap="round"/>
+<line x1="16" y1="174" x2="28" y2="174" stroke="#64748B" stroke-width="1" stroke-linecap="round"/>
+<line x1="16" y1="178" x2="30" y2="178" stroke="#64748B" stroke-width="1" stroke-linecap="round"/>
+<text x="70" y="179" text-anchor="middle" font-size="10" font-weight="500" fill="#334155">Bookings</text>
+
+<!-- Visitors -->
+<rect x="10" y="196" width="112" height="28" rx="6" fill="#F1F5F9" stroke="#94A3B8" stroke-width="1.2"/>
+<rect x="14" y="200" width="18" height="18" rx="3" fill="#CBD5E1"/>
+<line x1="16" y1="206" x2="30" y2="206" stroke="#64748B" stroke-width="1" stroke-linecap="round"/>
+<line x1="16" y1="210" x2="28" y2="210" stroke="#64748B" stroke-width="1" stroke-linecap="round"/>
+<line x1="16" y1="214" x2="30" y2="214" stroke="#64748B" stroke-width="1" stroke-linecap="round"/>
+<text x="70" y="215" text-anchor="middle" font-size="10" font-weight="500" fill="#334155">Visitors</text>
+
+<!-- Heritable Products -->
+<rect x="10" y="232" width="112" height="28" rx="6" fill="#F1F5F9" stroke="#94A3B8" stroke-width="1.2"/>
+<rect x="14" y="236" width="18" height="18" rx="3" fill="#CBD5E1"/>
+<line x1="16" y1="242" x2="30" y2="242" stroke="#64748B" stroke-width="1" stroke-linecap="round"/>
+<line x1="16" y1="246" x2="28" y2="246" stroke="#64748B" stroke-width="1" stroke-linecap="round"/>
+<line x1="16" y1="250" x2="30" y2="250" stroke="#64748B" stroke-width="1" stroke-linecap="round"/>
+<text x="70" y="247" text-anchor="middle" font-size="10" font-weight="500" fill="#334155">Heritable</text>
+<text x="70" y="258" text-anchor="middle" font-size="10" font-weight="500" fill="#334155">Products</text>
+
+<!-- =============================== INGESTION =============================== -->
+
+<!-- Azure Storage Account -->
+<rect x="132" y="100" width="120" height="82" rx="9" fill="#DCFCE7" stroke="#22C55E" stroke-width="1.5"/>
+<use href="#cy" x="156" y="128" width="32" height="32" color="#16A34A"/>
+<text x="192" y="155" text-anchor="middle" font-size="10" font-weight="600" fill="#14532D">Azure Storage</text>
+<text x="192" y="167" text-anchor="middle" font-size="9" fill="#166534">Account</text>
+
+<!-- Event Hubs -->
+<rect x="132" y="208" width="120" height="88" rx="9" fill="#CFFAFE" stroke="#06B6D4" stroke-width="1.5"/>
+<use href="#st" x="156" y="236" width="36" height="28" color="#0891B2"/>
+<text x="192" y="264" text-anchor="middle" font-size="10" font-weight="600" fill="#155E75">Event Hubs</text>
+<text x="192" y="277" text-anchor="middle" font-size="9" fill="#164E63">Multi-Tenant Data</text>
+
+<!-- Shortcut label -->
+<rect x="218" y="139" width="72" height="18" rx="4" fill="#F0FDF4" stroke="#86EFAC" stroke-width="1"/>
+<text x="254" y="151" text-anchor="middle" font-size="8.5" fill="#15803D">⇄ Shortcut</text>
+
+<!-- =============================== FABRIC — TOP ROW =============================== -->
+<!-- 5 boxes: x = 278, 448, 618, 788, 958  all y=70 h=92 w=155 -->
+
+<!-- Lakehouse (UDM) -->
+<rect x="278" y="68" width="155" height="92" rx="9" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+<use href="#lh" x="304" y="91" width="36" height="36" color="#2563EB"/>
+<text x="355" y="121" text-anchor="middle" font-size="10" font-weight="600" fill="#1D4ED8">Lakehouse</text>
+<text x="355" y="133" text-anchor="middle" font-size="9" fill="#1E40AF">(UDM)</text>
+<text x="355" y="146" text-anchor="middle" font-size="8" fill="#3B82F6">Multi-Tenant Data</text>
+
+<!-- Spark Notebook 1 -->
+<rect x="448" y="68" width="155" height="92" rx="9" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
+<use href="#sp" x="476" y="88" width="24" height="32" color="#B45309"/>
+<text x="525" y="121" text-anchor="middle" font-size="10" font-weight="600" fill="#92400E">Spark Notebook</text>
+<text x="525" y="133" text-anchor="middle" font-size="8.5" fill="#B45309">Update Old Data</text>
+<text x="525" y="145" text-anchor="middle" font-size="8.5" fill="#B45309">Insert New Data</text>
+
+<!-- Spark Notebook 2 (IDM Modelling) -->
+<rect x="618" y="68" width="155" height="92" rx="9" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
+<use href="#sp" x="646" y="88" width="24" height="32" color="#B45309"/>
+<text x="695" y="121" text-anchor="middle" font-size="10" font-weight="600" fill="#92400E">Spark Notebook</text>
+<text x="695" y="133" text-anchor="middle" font-size="9" fill="#B45309">IDM Modelling</text>
+
+<!-- Lakehouse (IDM) -->
+<rect x="788" y="68" width="155" height="92" rx="9" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+<use href="#lh" x="814" y="91" width="36" height="36" color="#2563EB"/>
+<text x="865" y="121" text-anchor="middle" font-size="10" font-weight="600" fill="#1D4ED8">Lakehouse</text>
+<text x="865" y="133" text-anchor="middle" font-size="9" fill="#1E40AF">(IDM)</text>
+<text x="865" y="146" text-anchor="middle" font-size="8" fill="#3B82F6">Multi-Tenant Data</text>
+
+<!-- Power BI Semantic Model + Power BI (combined) -->
+<rect x="958" y="68" width="170" height="92" rx="9" fill="#FFF7ED" stroke="#EA580C" stroke-width="1.5"/>
+<use href="#bi" x="980" y="90" width="32" height="32" color="#EA580C"/>
+<text x="1043" y="119" text-anchor="middle" font-size="10" font-weight="600" fill="#9A3412">Power BI</text>
+<text x="1043" y="131" text-anchor="middle" font-size="8.5" fill="#C2410C">Semantic Model</text>
+<text x="1043" y="143" text-anchor="middle" font-size="8.5" fill="#EA580C">→ Power BI</text>
+
+<!-- =============================== FABRIC — METADATA ROW =============================== -->
+
+<!-- JSON Meta (below UDM) -->
+<rect x="278" y="192" width="155" height="72" rx="9" fill="#DCFCE7" stroke="#22C55E" stroke-width="1.5"/>
+<use href="#js" x="298" y="210" width="28" height="28" color="#16A34A"/>
+<text x="355" y="224" text-anchor="middle" font-size="10" font-weight="600" fill="#14532D">Meta Data (JSON)</text>
+<text x="355" y="237" text-anchor="middle" font-size="8.5" fill="#166534">Stored in Storage Acct</text>
+<text x="355" y="250" text-anchor="middle" font-size="8.5" fill="#166534">Multi-Tenant UDM</text>
+
+<!-- Schema Definitions (below Spark NB 1) -->
+<rect x="448" y="192" width="155" height="72" rx="9" fill="#DCFCE7" stroke="#22C55E" stroke-width="1.5"/>
+<use href="#js" x="468" y="210" width="28" height="28" color="#16A34A"/>
+<text x="525" y="224" text-anchor="middle" font-size="10" font-weight="600" fill="#14532D">Schema Definitions</text>
+<text x="525" y="237" text-anchor="middle" font-size="8.5" fill="#166534">Controlled via JSON</text>
+<text x="525" y="250" text-anchor="middle" font-size="8.5" fill="#166534">in Storage Account</text>
+
+<!-- =============================== FABRIC — AGENTS ROW =============================== -->
+<!-- 3 agents at x=720, 840, 960, y-center=390, r=38 -->
+
+<!-- Data Agent 1 -->
+<circle cx="726" cy="390" r="40" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+<use href="#ag" x="706" y="370" width="40" height="40" color="#6D28D9"/>
+<text x="726" y="444" text-anchor="middle" font-size="10" font-weight="600" fill="#4C1D95">Data Agent</text>
+
+<!-- Data Agent 2 -->
+<circle cx="866" cy="390" r="40" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+<use href="#ag" x="846" y="370" width="40" height="40" color="#6D28D9"/>
+<text x="866" y="444" text-anchor="middle" font-size="10" font-weight="600" fill="#4C1D95">Data Agent</text>
+
+<!-- Data Agent 3 -->
+<circle cx="1006" cy="390" r="40" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+<use href="#ag" x="986" y="370" width="40" height="40" color="#6D28D9"/>
+<text x="1006" y="444" text-anchor="middle" font-size="10" font-weight="600" fill="#4C1D95">Data Agent</text>
+
+<!-- =============================== ANALYTICS COLUMN =============================== -->
+
+<!-- O365 Copilot -->
+<rect x="1168" y="82" width="208" height="78" rx="9" fill="#F0F9FF" stroke="#0284C7" stroke-width="1.5"/>
+<use href="#co" x="1184" y="101" width="32" height="32" color="#0369A1"/>
+<text x="1272" y="115" text-anchor="middle" font-size="10" font-weight="600" fill="#0C4A6E">O365 Copilot</text>
+<text x="1272" y="128" text-anchor="middle" font-size="8.5" fill="#075985">AI-powered insights</text>
+<text x="1272" y="141" text-anchor="middle" font-size="8.5" fill="#075985">for customers</text>
+
+<!-- Cross Product Dashboards -->
+<rect x="1168" y="182" width="208" height="78" rx="9" fill="#F5F3FF" stroke="#7C3AED" stroke-width="1.5"/>
+<use href="#db" x="1184" y="201" width="32" height="32" color="#6D28D9"/>
+<text x="1272" y="215" text-anchor="middle" font-size="10" font-weight="600" fill="#3B0764">Cross Product</text>
+<text x="1272" y="228" text-anchor="middle" font-size="9" fill="#4C1D95">Dashboards</text>
+<text x="1272" y="241" text-anchor="middle" font-size="8.5" fill="#6D28D9">Space · Assets · More</text>
+
+<!-- Module Summary Dashboards -->
+<rect x="1168" y="282" width="208" height="78" rx="9" fill="#F5F3FF" stroke="#7C3AED" stroke-width="1.5"/>
+<use href="#db" x="1184" y="301" width="32" height="32" color="#6D28D9"/>
+<text x="1272" y="315" text-anchor="middle" font-size="10" font-weight="600" fill="#3B0764">Module Summary</text>
+<text x="1272" y="328" text-anchor="middle" font-size="9" fill="#4C1D95">Dashboards</text>
+<text x="1272" y="341" text-anchor="middle" font-size="8.5" fill="#6D28D9">Bookings · Visitors</text>
+
+<!-- Customers -->
+<rect x="1168" y="382" width="208" height="70" rx="9" fill="#F0FDF4" stroke="#22C55E" stroke-width="1.5"/>
+<use href="#pe" x="1184" y="398" width="36" height="36" color="#16A34A"/>
+<text x="1272" y="412" text-anchor="middle" font-size="11" font-weight="700" fill="#14532D">Customers</text>
+<text x="1272" y="426" text-anchor="middle" font-size="8.5" fill="#166534">Space · Assets</text>
+<text x="1272" y="438" text-anchor="middle" font-size="8.5" fill="#166534">Bookings · Visitors</text>
+
+<!-- =============================== CUSTOMER DATA LAKE =============================== -->
+
+<!-- Spark NB Multi-Tenant -->
+<rect x="278" y="570" width="170" height="92" rx="9" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
+<use href="#sp" x="298" y="590" width="24" height="32" color="#B45309"/>
+<text x="363" y="620" text-anchor="middle" font-size="10" font-weight="600" fill="#92400E">Spark Notebook</text>
+<text x="363" y="633" text-anchor="middle" font-size="8.5" fill="#B45309">Update / Insert</text>
+<text x="363" y="646" text-anchor="middle" font-size="8.5" fill="#B45309">Multi-Tenant Data</text>
+
+<!-- Spark NB Single-Tenant -->
+<rect x="468" y="570" width="170" height="92" rx="9" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
+<use href="#sp" x="488" y="590" width="24" height="32" color="#B45309"/>
+<text x="553" y="620" text-anchor="middle" font-size="10" font-weight="600" fill="#92400E">Spark Notebook</text>
+<text x="553" y="633" text-anchor="middle" font-size="8.5" fill="#B45309">Multi-Tenant to</text>
+<text x="553" y="646" text-anchor="middle" font-size="8.5" fill="#B45309">Single-Tenant</text>
+
+<!-- Multi-Tenant Lakehouse (RLS) -->
+<rect x="278" y="688" width="170" height="100" rx="9" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+<use href="#lh" x="298" y="711" width="36" height="36" color="#2563EB"/>
+<text x="363" y="736" text-anchor="middle" font-size="10" font-weight="600" fill="#1D4ED8">Multi-Tenant</text>
+<text x="363" y="749" text-anchor="middle" font-size="9" fill="#1E40AF">Lakehouse</text>
+<text x="363" y="762" text-anchor="middle" font-size="8" fill="#3B82F6">Row Level Security</text>
+<text x="363" y="774" text-anchor="middle" font-size="8" fill="#3B82F6">Shared Access</text>
+
+<!-- LakeHouse 1 (Tenant 1) -->
+<rect x="468" y="688" width="130" height="100" rx="9" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+<use href="#lh" x="490" y="711" width="32" height="32" color="#2563EB"/>
+<text x="533" y="738" text-anchor="middle" font-size="10" font-weight="600" fill="#1D4ED8">LakeHouse 1</text>
+<text x="533" y="751" text-anchor="middle" font-size="9" fill="#1E40AF">for Tenant 1</text>
+<text x="533" y="764" text-anchor="middle" font-size="8" fill="#3B82F6">(Single Tenant</text>
+<text x="533" y="776" text-anchor="middle" font-size="8" fill="#3B82F6">Data)</text>
+
+<!-- LakeHouse N (Tenant N) -->
+<rect x="614" y="688" width="130" height="100" rx="9" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+<use href="#lh" x="636" y="711" width="32" height="32" color="#2563EB"/>
+<text x="679" y="738" text-anchor="middle" font-size="10" font-weight="600" fill="#1D4ED8">LakeHouse N</text>
+<text x="679" y="751" text-anchor="middle" font-size="9" fill="#1E40AF">for Tenant N</text>
+<text x="679" y="764" text-anchor="middle" font-size="8" fill="#3B82F6">(Single Tenant</text>
+<text x="679" y="776" text-anchor="middle" font-size="8" fill="#3B82F6">Data)</text>
+
+<!-- Foundry Agent -->
+<rect x="780" y="572" width="150" height="90" rx="9" fill="#FDF4FF" stroke="#A855F7" stroke-width="1.5"/>
+<use href="#ag" x="800" y="591" width="36" height="36" color="#9333EA"/>
+<text x="855" y="621" text-anchor="middle" font-size="10" font-weight="600" fill="#581C87">Foundry Agent</text>
+<text x="855" y="635" text-anchor="middle" font-size="8.5" fill="#7E22CE">AI-powered</text>
+<text x="855" y="647" text-anchor="middle" font-size="8.5" fill="#7E22CE">Orchestration</text>
+
+<!-- AI Foundry -->
+<rect x="780" y="686" width="150" height="88" rx="9" fill="#FDF4FF" stroke="#A855F7" stroke-width="1.5"/>
+<use href="#co" x="800" y="705" width="32" height="32" color="#9333EA"/>
+<text x="855" y="730" text-anchor="middle" font-size="10" font-weight="600" fill="#581C87">AI Foundry</text>
+<text x="855" y="744" text-anchor="middle" font-size="8.5" fill="#7E22CE">Model Deployment</text>
+<text x="855" y="757" text-anchor="middle" font-size="8.5" fill="#7E22CE">&amp; Inference</text>
+
+<!-- =============================== ARROWS =============================== -->
+
+<!-- Data Sources → Event Hubs (group arrow from right side of sources) -->
+<line x1="122" y1="102" x2="132" y2="140" stroke="#94A3B8" stroke-width="1.2" stroke-dasharray="4,3"/>
+<line x1="122" y1="138" x2="132" y2="185" stroke="#94A3B8" stroke-width="1.2" stroke-dasharray="4,3"/>
+<line x1="122" y1="174" x2="132" y2="230" stroke="#94A3B8" stroke-width="1.2" stroke-dasharray="4,3"/>
+<line x1="122" y1="210" x2="132" y2="248" stroke="#94A3B8" stroke-width="1.2" stroke-dasharray="4,3"/>
+<line x1="122" y1="246" x2="132" y2="260" stroke="#94A3B8" stroke-width="1.2" stroke-dasharray="4,3"/>
+<!-- Main source arrow to event hubs -->
+<path d="M 66 270 L 66 290 L 142 290 L 142 260" stroke="#94A3B8" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<text x="100" y="287" text-anchor="middle" font-size="8" fill="#94A3B8">captured</text>
+
+<!-- Storage Account → UDM Lakehouse (shortcut) -->
+<line x1="252" y1="141" x2="278" y2="114" stroke="#22C55E" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr-g)"/>
+
+<!-- Event Hubs → UDM Lakehouse -->
+<path d="M 252 252 L 262 252 L 262 114 L 278 114" stroke="#06B6D4" stroke-width="2" fill="none" marker-end="url(#arr-b)"/>
+<text x="264" y="188" font-size="8" fill="#0891B2" transform="rotate(-90 264 188)">Event Data</text>
+
+<!-- UDM → SparkNB1 -->
+<line x1="433" y1="114" x2="448" y2="114" stroke="#3B82F6" stroke-width="1.8" marker-end="url(#arr-b)"/>
+
+<!-- SparkNB1 → SparkNB2/IDM -->
+<line x1="603" y1="114" x2="618" y2="114" stroke="#3B82F6" stroke-width="1.8" marker-end="url(#arr-b)"/>
+
+<!-- SparkNB2 → IDM Lakehouse -->
+<line x1="773" y1="114" x2="788" y2="114" stroke="#3B82F6" stroke-width="1.8" marker-end="url(#arr-b)"/>
+
+<!-- IDM Lakehouse → PBI Semantic -->
+<line x1="943" y1="114" x2="958" y2="114" stroke="#3B82F6" stroke-width="1.8" marker-end="url(#arr-b)"/>
+
+<!-- UDM → JSON Meta (down) -->
+<line x1="355" y1="160" x2="355" y2="192" stroke="#22C55E" stroke-width="1.5" marker-end="url(#arr-g)"/>
+
+<!-- SparkNB1 → Schema Defs (down) -->
+<line x1="525" y1="160" x2="525" y2="192" stroke="#22C55E" stroke-width="1.5" marker-end="url(#arr-g)"/>
+
+<!-- IDM Lakehouse → Data Agents (diagonal) -->
+<path d="M 865 160 L 865 360 L 726 360 L 726 350" stroke="#7C3AED" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<path d="M 943 160 L 943 350 L 866 350" stroke="#7C3AED" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+
+<!-- PBI → Data Agent 3 -->
+<path d="M 1043 160 L 1043 360 L 1006 360 L 1006 350" stroke="#7C3AED" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+
+<!-- PBI → Analytics (right) -->
+<path d="M 1128 100 L 1156 110" stroke="#EA580C" stroke-width="1.8" fill="none" marker-end="url(#arr)"/>
+<path d="M 1128 114 L 1156 200" stroke="#EA580C" stroke-width="1.5" fill="none" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+<path d="M 1128 128 L 1156 300" stroke="#EA580C" stroke-width="1.5" fill="none" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+
+<!-- Agents → Analytics (right) -->
+<line x1="1046" y1="390" x2="1156" y2="410" stroke="#7C3AED" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+
+<!-- Analytics → Customers (down) -->
+<line x1="1272" y1="360" x2="1272" y2="382" stroke="#6D28D9" stroke-width="1.5" marker-end="url(#arr)"/>
+<line x1="1272" y1="282" x2="1272" y2="282" stroke="none"/>
+
+<!-- UDM → Customer DL (down) -->
+<path d="M 355 160 L 355 530 L 355 545" stroke="#3B82F6" stroke-width="1.5" fill="none" stroke-dasharray="5,3" marker-end="url(#arr-b)"/>
+
+<!-- IDM → Customer DL SparkNB ST -->
+<path d="M 865 160 L 865 530 L 553 530 L 553 570" stroke="#3B82F6" stroke-width="1.5" fill="none" stroke-dasharray="5,3" marker-end="url(#arr-b)"/>
+
+<!-- SparkNB MT → MT Lakehouse (down) -->
+<line x1="363" y1="662" x2="363" y2="688" stroke="#D97706" stroke-width="1.5" marker-end="url(#arr)"/>
+
+<!-- SparkNB ST → LH1 (down) -->
+<line x1="533" y1="662" x2="533" y2="688" stroke="#D97706" stroke-width="1.5" marker-end="url(#arr)"/>
+
+<!-- SparkNB ST → LHN (down diagonal) -->
+<path d="M 553 662 L 679 688" stroke="#D97706" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+
+<!-- Foundry Agent → AI Foundry (down) -->
+<line x1="855" y1="662" x2="855" y2="686" stroke="#A855F7" stroke-width="1.5" marker-end="url(#arr)"/>
+
+<!-- IDM → Foundry Agent (cross connection) -->
+<path d="M 865 160 L 1050 160 L 1050 530 L 855 530 L 855 572" stroke="#A855F7" stroke-width="1.3" fill="none" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+
+<!-- SparkNB MT → SparkNB ST (right arrow) -->
+<line x1="448" y1="616" x2="468" y2="616" stroke="#94A3B8" stroke-width="1.3" stroke-dasharray="4,3" marker-end="url(#arr)"/>
+
+<!-- ===== LEGEND / SEPARATOR ===== -->
+<line x1="10" y1="535" x2="1390" y2="535" stroke="#E2E8F0" stroke-width="1"/>
+
+</svg>

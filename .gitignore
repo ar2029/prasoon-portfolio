@@ -1,12 +1,3 @@
-# Angular specific
-/dist/
-/out-tsc/
-/tmp/
-/coverage/
-/e2e/test-output/
-/.angular/
-.angular/
-
 # Node modules and dependency files
 /node_modules/
 /package-lock.json
@@ -22,7 +13,37 @@
 # TypeScript cache
 *.tsbuildinfo
 
+# Vite cache
+/.vite/
+
+# Local editor and OS files
+/.vscode/
+/.idea/
+.DS_Store
+Thumbs.db
+
+# Local env files
+/.env
+/.env.*
+*.local
+
+# Build outputs
+/dist/
+/build/
+/out/
+
 # Logs
 npm-debug.log*
+pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+*.log
+
+# Test coverage
+/coverage/
+
+# ESLint cache
+/.eslintcache
+
+# Anthropic
+.claude/
