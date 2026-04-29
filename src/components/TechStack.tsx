@@ -17,7 +17,7 @@ import skillCategories from '../data/skills'
 
 interface SkillMeta {
   icon?: IconType
-  img?: string   // path to local SVG in /images/skill-icons/
+  img?: string   // path to local SVG in //publicimages/skill-icons/
   color: string
 }
 
@@ -36,31 +36,31 @@ const SKILL_ICONS: Record<string, SkillMeta> = {
   'Hive':          { icon: SiApachehive,    color: '#FDCC3D' },
   'Delta Lake':    { icon: SiDatabricks,    color: '#FF3621' },
   'Parquet':       { icon: SiApacheparquet, color: '#50ABF1' },
-  'Avro':          { img: '/images/skill-icons/avro.svg', color: '#0B6396' },
+  'Avro':          { img: '/public/images/skill-icons/avro.svg', color: '#0B6396' },
   // Cloud & Platform
   'Microsoft Azure':         { icon: TbBrandAzure,   color: '#0078D4' },
-  'Microsoft Fabric':        { img: '/images/skill-icons/fabric.svg', color: '#7B2FBE' },
+  'Microsoft Fabric':        { img: '/public/images/skill-icons/fabric.svg', color: '#7B2FBE' },
   'Azure Databricks':        { icon: SiDatabricks,   color: '#FF3621' },
-  'Azure Synapse Analytics': { img: '/images/skill-icons/synapse.svg',    color: '#0078D4' },
-  'Azure Data Lake Gen2':    { img: '/images/skill-icons/adls-gen2.svg',  color: '#0078D4' },
+  'Azure Synapse Analytics': { img: '/public/images/skill-icons/synapse.svg',    color: '#0078D4' },
+  'Azure Data Lake Gen2':    { img: '/public/images/skill-icons/adls-gen2.svg',  color: '#0078D4' },
   // Data Ingestion
-  'Azure Event Hubs':   { img: '/images/skill-icons/event-hubs.svg',      color: '#0078D4' },
+  'Azure Event Hubs':   { img: '/public/images/skill-icons/event-hubs.svg',      color: '#0078D4' },
   'Apache Kafka':       { icon: SiApachekafka,                            color: '#60B0FF' },
-  'Azure Data Factory': { img: '/images/skill-icons/data-factory.svg',    color: '#0078D4' },
+  'Azure Data Factory': { img: '/public/images/skill-icons/data-factory.svg',    color: '#0078D4' },
   'REST APIs':          { icon: TbApi,                color: '#6BA539' },
   'Schema Registry':    { icon: TbDatabase,           color: '#CC0000' },
   // Storage & Lakehouse
-  'Azure Blob Storage': { img: '/images/skill-icons/azure-blob-block.svg',        color: '#0078D4' },
-  'Azure Data Lake Analytics':    { img: '/images/skill-icons/azure-data-lake-analytics.svg',  color: '#0078D4' },
+  'Azure Blob Storage': { img: '/public/images/skill-icons/azure-blob-block.svg',        color: '#0078D4' },
+  'Azure Data Lake Analytics':    { img: '/public/images/skill-icons/azure-data-lake-analytics.svg',  color: '#0078D4' },
   'Snowflake':          { icon: TbBrandSnowflake,     color: '#29B5E8' },
   'AWS S3':             { icon: TbBrandAws,           color: '#FF9900' },
-  'Fabric Lakehouse':   { img: '/images/skill-icons/lakehouse.svg',        color: '#7B2FBE' },
+  'Fabric Lakehouse':   { img: '/public/images/skill-icons/lakehouse.svg',        color: '#7B2FBE' },
   // Databases
   'SQL Server':               { icon: TbDatabase,   color: '#CC2927' },
   'Databricks SQL Warehouse': { icon: SiDatabricks , color: '#FF3621' },
-  'Cosmos DB':                { img: '/images/skill-icons/azure-cosmos-db.svg',       color: '#0078D4' },
+  'Cosmos DB':                { img: '/public/images/skill-icons/azure-cosmos-db.svg',       color: '#0078D4' },
   'Azure Table Storage':      { icon: TbTable,       color: '#0078D4' },
-  'Azure SQL DB':             { img: '/images/skill-icons/azure-sql-db.svg',    color: '#0078D4' },
+  'Azure SQL DB':             { img: '/public/images/skill-icons/azure-sql-db.svg',    color: '#0078D4' },
   // DevOps & CI/CD
   'Azure DevOps': { icon: TbGitBranch,      color: '#0078D4' },
   'Git':          { icon: TbBrandGit,       color: '#F05032' },
@@ -68,20 +68,20 @@ const SKILL_ICONS: Record<string, SkillMeta> = {
   'Azure Repos':  { icon: TbBrandAzure,     color: '#0078D4' },
   'IaC':          { icon: TbBrandTerraform, color: '#7B42BC' },
   // Analytics & BI
-  'Power BI':         { img: '/images/skill-icons/powerbi.svg',  color: '#F2C811' },
-  'Tableau':          { img: '/images/skill-icons/tableau.svg',  color: '#E97627' },
-  'ThoughtSpot':      { img: '/images/skill-icons/thoughtspot.svg',  color: '#FFFFFF' },
+  'Power BI':         { img: '/public/images/skill-icons/powerbi.svg',  color: '#F2C811' },
+  'Tableau':          { img: '/public/images/skill-icons/tableau.svg',  color: '#E97627' },
+  'ThoughtSpot':      { img: '/public/images/skill-icons/thoughtspot.svg',  color: '#FFFFFF' },
   'Palantir Foundry': { icon: SiPalantir,   color: '#A0A0A0' },
   // Monitoring & Observability
-  'Azure App Insights':      { img: '/images/skill-icons/azure-app-insights.svg',     color: '#0078D4' },
-  'Log Analytics Workspace': { img: '/images/skill-icons/azure-log-analytics-workspaces.svg',      color: '#0078D4' },
+  'Azure App Insights':      { img: '/public/images/skill-icons/azure-app-insights.svg',     color: '#0078D4' },
+  'Log Analytics Workspace': { img: '/public/images/skill-icons/azure-log-analytics-workspaces.svg',      color: '#0078D4' },
   'OpenTelemetry':           { icon: SiOpentelemetry, color: '#F5A800' },
   // Tools
   'Postman':         { icon: SiPostman,        color: '#FF6C37' },
-  'DBeaver':         { img: '/images/skill-icons/dbeaver.svg',     color: '#382923' },
+  'DBeaver':         { img: '/public/images/skill-icons/dbeaver.svg',     color: '#382923' },
   'VS Code':         { icon: TbBrandVscode,                       color: '#007ACC' },
-  'Jinja Templates': { img: '/images/skill-icons/jinja.svg',      color: '#7E0C1B' },
-  'Azure Key Vault': { img: '/images/skill-icons/azure-key-vaults.svg',            color: '#0078D4' },
+  'Jinja Templates': { img: '/public/images/skill-icons/jinja.svg',      color: '#7E0C1B' },
+  'Azure Key Vault': { img: '/public/images/skill-icons/azure-key-vaults.svg',            color: '#0078D4' },
 }
 
 function SkillTile({ skill }: { skill: string }) {
