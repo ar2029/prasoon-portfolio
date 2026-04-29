@@ -47,3 +47,9 @@ yarn-error.log*
 
 # Anthropic
 .claude/
+
+# Nested repo copy (should not be tracked)
+/prasoon-portfolio/
+
+# Vite temp deps
+/.vite/deps_temp_*/
