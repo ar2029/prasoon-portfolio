@@ -1,4 +1,4 @@
-import { MdEmail, MdLocationOn } from 'react-icons/md'
+import { MdLocationOn } from 'react-icons/md'
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
 
 const navLinks = [

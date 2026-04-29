@@ -5,14 +5,13 @@ import {
   SiDatabricks, SiPostman, SiOpentelemetry, SiApacheparquet, SiPalantir,
 } from 'react-icons/si'
 import {
-  FaCode, FaKey, FaFileCode, FaLaptopCode,
+  FaCode, FaFileCode, FaLaptopCode,
 } from 'react-icons/fa'
 import {
   TbBrandAzure, TbBrandAws, TbBrandSnowflake, TbBrandVscode,
   TbBrandTerraform, TbBrandGit, TbBrandGithub, TbBrandPython,
-  TbSql, TbDatabase, TbApi, TbActivity,
-  TbCloudFilled, TbTable, TbGitBranch, TbAtom2, TbChartDots3,
-  TbChartLine,
+  TbSql, TbDatabase, TbApi,
+  TbTable, TbGitBranch,
 } from 'react-icons/tb'
 import skillCategories from '../data/skills'
 
