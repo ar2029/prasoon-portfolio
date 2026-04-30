@@ -20,11 +20,11 @@ export default function ResumeRequestModal({ isOpen, onClose }: ResumeRequestMod
 
         <div className="grid gap-5 lg:grid-cols-[1.4fr_1fr]">
           <div className="rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-2xl shadow-brand-blue/10">
-          <p className="mt-4 text-gray-200 text-sm leading-relaxed">
-              Once I receive these details, I will promptly send the updated resume on the same email thread.
+            <p className="text-gray-200 text-sm leading-relaxed">
+              Thank you for your interest in my profile.
             </p>
-            <p className="text-gray-300 leading-relaxed">
-             To receive my updated resume, I kindly request you to share an email from your official email address, including the detailed job description, budget for the role, and your contact number. This will help me ensure better alignment with the opportunity.
+            <p className="mt-4 text-gray-300 leading-relaxed">
+             To ensure I can provide you with the most relevant and up-to-date information, I kindly request that you share some details over the email about the opportunity you're considering me for, from your official email address, including the detailed job description, budget for the role. This will help me tailor my resume to better align with the specific requirements of the role.
             </p>
             <p className="mt-4 text-gray-200 text-sm leading-relaxed">
               Once I receive these details, I will promptly send the updated resume on the same email thread.
@@ -40,7 +40,7 @@ export default function ResumeRequestModal({ isOpen, onClose }: ResumeRequestMod
               <div className="rounded-3xl bg-slate-900/90 p-4 border border-white/10">
                 <p className="text-xs uppercase tracking-[0.24em] text-slate-500 mb-2">What to include</p>
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  Job Description, Budgetrange, and Contact Number.
+                  Job Description, Budget, and Contact Number.
                 </p>
               </div>
               <div className="rounded-3xl bg-slate-900/90 p-4 border border-white/10">
