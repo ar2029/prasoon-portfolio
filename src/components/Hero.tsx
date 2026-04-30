@@ -173,7 +173,7 @@ export default function Hero() {
             onClick={() => setIsResumeOpen(true)}
             className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-white/10 text-gray-300 rounded-xl font-medium text-sm hover:border-brand-blue/50 hover:text-white hover:bg-brand-blue/5 transition-all duration-200 active:scale-95"
           >
-            Request Resume
+            Contact Me/Request Resume
             <MdDownload size={18} />
           </button>
         </div>
