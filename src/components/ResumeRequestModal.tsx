@@ -7,7 +7,7 @@ interface ResumeRequestModalProps {
 
 export default function ResumeRequestModal({ isOpen, onClose }: ResumeRequestModalProps) {
   return (
-    <Modal isOpen={isOpen} onClose={onClose} title="Resume Request" wide>
+    <Modal isOpen={isOpen} onClose={onClose} title="Contact Me/Resume Request" wide>
       <div className="space-y-6 text-left">
         <div className="space-y-3">
           <p className="text-sm uppercase tracking-[0.32em] text-brand-cyan font-semibold">
