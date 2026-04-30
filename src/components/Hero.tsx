@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { MdArrowForward, MdDownload } from 'react-icons/md'
+import ResumeRequestModal from './ResumeRequestModal'
 
 const ROLES = [
   'Senior Data Engineer',
@@ -105,6 +106,8 @@ export default function Hero() {
     }
   }, [])
 
+  const [isResumeOpen, setIsResumeOpen] = useState(false)
+
   const scrollTo = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
   }
@@ -165,14 +168,14 @@ export default function Hero() {
             View My Work
             <MdArrowForward size={18} />
           </button>
-          <a
-            href="/resume.pdf"
-            download="Prasoon_Garg_Resume.pdf"
+          <button
+            type="button"
+            onClick={() => setIsResumeOpen(true)}
             className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-white/10 text-gray-300 rounded-xl font-medium text-sm hover:border-brand-blue/50 hover:text-white hover:bg-brand-blue/5 transition-all duration-200 active:scale-95"
           >
-            Download Resume
+            Request Resume
             <MdDownload size={18} />
-          </a>
+          </button>
         </div>
 
         {/* Stats */}
@@ -191,6 +194,10 @@ export default function Hero() {
         </div>
       </div>
 
+      <ResumeRequestModal
+        isOpen={isResumeOpen}
+        onClose={() => setIsResumeOpen(false)}
+      />
     </section>
   )
 }
