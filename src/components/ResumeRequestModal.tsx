@@ -20,8 +20,11 @@ export default function ResumeRequestModal({ isOpen, onClose }: ResumeRequestMod
 
         <div className="grid gap-5 lg:grid-cols-[1.4fr_1fr]">
           <div className="rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-2xl shadow-brand-blue/10">
+          <p className="mt-4 text-gray-200 text-sm leading-relaxed">
+              Once I receive these details, I will promptly send the updated resume on the same email thread.
+            </p>
             <p className="text-gray-300 leading-relaxed">
-              Thank you for your interest in my profile. To receive my updated resume, please share your official email address, the detailed job description, the budget for the role, and your registered contact number.
+             To receive my updated resume, I kindly request you to share an email from your official email address, including the detailed job description, budget for the role, and your contact number. This will help me ensure better alignment with the opportunity.
             </p>
             <p className="mt-4 text-gray-200 text-sm leading-relaxed">
               Once I receive these details, I will promptly send the updated resume on the same email thread.
@@ -37,13 +40,13 @@ export default function ResumeRequestModal({ isOpen, onClose }: ResumeRequestMod
               <div className="rounded-3xl bg-slate-900/90 p-4 border border-white/10">
                 <p className="text-xs uppercase tracking-[0.24em] text-slate-500 mb-2">What to include</p>
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  Job description, responsibilities, budget range, and contact number.
+                  Job Description, Budgetrange, and Contact Number.
                 </p>
               </div>
               <div className="rounded-3xl bg-slate-900/90 p-4 border border-white/10">
                 <p className="text-xs uppercase tracking-[0.24em] text-slate-500 mb-2">Why this helps</p>
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  This lets me tailor the resume quickly and respond with the strongest match.
+                  This lets me tailor the resume quickly and respond at the earliest.
                 </p>
               </div>
             </div>
