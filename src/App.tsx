@@ -1,3 +1,4 @@
+import AnnouncementBanner from './components/AnnouncementBanner'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -12,6 +13,7 @@ import Footer from './components/Footer'
 function App() {
   return (
     <div className="bg-bg-primary min-h-screen">
+      <AnnouncementBanner />
       <Navbar />
       <main>
         <Hero />

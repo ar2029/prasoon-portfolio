@@ -1,3 +1,4 @@
+import { MdCalendarToday } from 'react-icons/md'
 import Modal from './ui/Modal'
 
 interface ResumeRequestModalProps {
@@ -16,6 +17,15 @@ export default function ResumeRequestModal({ isOpen, onClose }: ResumeRequestMod
           <h3 className="text-2xl md:text-3xl font-heading font-semibold text-white">
             Send the details and I’ll share the latest resume.
           </h3>
+        </div>
+
+        {/* Availability notice */}
+        <div className="flex items-start gap-3 rounded-2xl border border-brand-cyan/20 bg-brand-cyan/5 px-5 py-4">
+          <MdCalendarToday size={18} className="text-brand-cyan shrink-0 mt-0.5" />
+          <p className="text-sm text-gray-300 leading-relaxed">
+            <span className="font-semibold text-brand-cyan">Availability note —</span>{' '}
+            My last working day is <span className="font-semibold text-white">10 July 2026</span>. I plan to travel in early July and need time for onboarding formalities. I am looking for opportunities where the recruitment process — including interviews and the official offer letter — can be <span className="font-semibold text-white">fully completed within June 2026</span>.
+          </p>
         </div>
 
         <div className="grid gap-5 lg:grid-cols-[1.4fr_1fr]">
