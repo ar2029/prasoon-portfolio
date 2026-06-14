@@ -34,7 +34,7 @@ export default function Modal({ isOpen, onClose, children, title, wide = false }
 
   return createPortal(
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-4"
+      className="fixed inset-0 z-[200] flex items-center justify-center p-4"
       aria-modal="true"
       role="dialog"
     >

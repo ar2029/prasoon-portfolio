@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { MdArrowForward, MdDownload } from 'react-icons/md'
 import ResumeRequestModal from './ResumeRequestModal'
+import AvailabilityPopup from './AvailabilityPopup'
 
 const ROLES = [
   'Senior Data Engineer',
@@ -198,6 +199,7 @@ export default function Hero() {
         isOpen={isResumeOpen}
         onClose={() => setIsResumeOpen(false)}
       />
+      <AvailabilityPopup />
     </section>
   )
 }
